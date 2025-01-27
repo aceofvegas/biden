@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<link rel="stylesheet" href="css/count.css">
-
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Election 2024 Countdown</title>
-
+    <title>Futuristic Timer</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <h1>Until Trump Saves America</h1>
-    <div class="countdown-timer"></div>
-    <div class="message"></div>
-    <div class="year"></div>
-</body>
+    <!-- Enhanced Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-container">
+            <div class="holographic-grid"></div>
+            <div class="neon-ring"></div>
+            <div class="quantum-loader">
+                <div class="quantum-dot" style="transform: rotate(0deg)"></div>
+                <div class="quantum-dot" style="transform: rotate(45deg)"></div>
+                <div class="quantum-dot" style="transform: rotate(90deg)"></div>
+                <div class="quantum-dot" style="transform: rotate(135deg)"></div>
+            </div>
+            <div class="energy-beam"></div>
+            <div class="neon-text">Initializing System</div>
+            <div class="loading-progress" id="loadingProgress">0%</div>
+        </div>
+        <!-- Dynamic Particles -->
+        <div class="particles-container"></div>
+    </div>
 
+    <!-- Main Content -->
+    <div class="container" id="mainContent">
+        <div class="timer" id="timer">
+            <div class="time-unit">
+                <span id="days">00</span>
+                <div class="label">DAYS</div>
+            </div>
+            <div class="time-unit">
+                <span id="hours">00</span>
+                <div class="label">HOURS</div>
+            </div>
+            <div class="time-unit">
+                <span id="minutes">00</span>
+                <div class="label">MINUTES</div>
+            </div>
+            <div class="time-unit">
+                <span id="seconds">00</span>
+                <div class="label">SECONDS</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
-<script src="js/count.js"></script>
